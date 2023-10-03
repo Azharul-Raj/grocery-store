@@ -2,8 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {usePathname} from 'next/navigation'
 import {Dispatch,SetStateAction} from 'react';
-import {FiX} from 'react-icons/fi'
-import {FiLogOut} from 'react-icons/fi'
+import {FiX} from 'react-icons/fi';
 
 interface sidebarProps{
     isOpen:boolean;
@@ -15,7 +14,7 @@ function Sidebar({isOpen,setIsOpen}:sidebarProps) {
   return (
     <aside
     //   ref={sidebar}
-      className={`absolute left-0 top-0 z-9999 rounded-lg flex h-screen w-[250px] flex-col overflow-y-hidden bg-gradient-to-b bg-[#8338E1] duration-300 ease-linear lg:static lg:translate-x-0 ${
+      className={`absolute left-0 top-0 z-9999 flex h-screen w-[250px] flex-col overflow-y-hidden bg-gradient-to-b bg-[#8338E1] duration-300 ease-linear lg:static lg:translate-x-0 ${
         isOpen ? 'translate-x-0 z-10 backdrop-blur bg-[#8338E1] duration-300/30' : '-translate-x-full z-10'
       }`}>
         {/* cross Icon */}
